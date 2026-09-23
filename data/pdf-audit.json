@@ -1,0 +1,1554 @@
+[
+  {
+    "page": 1,
+    "label": "Piano 0",
+    "width": 1190.52,
+    "height": 841.7999999999998,
+    "bbox": [
+      -595.26,
+      420.9,
+      595.26,
+      1262.6999999999998
+    ],
+    "chars": 1243,
+    "lines": 155,
+    "curves": 33,
+    "rects": 27,
+    "images": 23,
+    "identifiers": [
+      "AT1",
+      "AT2",
+      "AT3",
+      "AT4",
+      "AT5",
+      "AT6",
+      "AT7",
+      "BT1",
+      "BT2",
+      "BT3",
+      "BT4",
+      "BT5",
+      "BT6",
+      "CT1",
+      "CT2",
+      "CT3",
+      "CT4",
+      "CT5",
+      "CT6",
+      "MULINO"
+    ],
+    "text": "BT3 BT4\nTipologia unità immobiliari Sup.com 42 m² BT5 Sup.com 50 m² Sup.com 42 m² CT3 CT4 CT5\n1.Monolocale\nSup.com 43 m² Sup.com 42 m² Sup.com 51 m² AT7\n2.Bilocale\nSup.com 48 m²\nBT2\nUfficio Scala C\nSup.com 49 m² 100.91 m²\n* In vendita con arredi da capitolato\nLegenda locali BT1\nM Monocamera Sup.com 63 m² Scala B Scala A 74.15 m² BT6 CT1 S/K Soggiorno/Cucina 29.91 m² CT6\nSup.com 43 m² Sup.com 45 m²\nK Cucina Sup.com 56 m²\nS Soggiorno\nC Camera AT6\nB Bagno\nSup.com 50 m²\nR Ripostiglio\nIN Ingresso\nAB Antibagno\nD Disimpegno\nL Lavanderia\nC.A Cabina Armadio AT5\nSP Soppalco\nSup.com 51 m²\nCO Cortile\nBA Balcone\nSO Soffitta\nTE Terrazzo\nN.A Non Accessibile\nAT4\nSup.com 48 m²\nAT3\nSup.com 51 m²\nAT2\nSup.com 58 m²\nAT1\nSup.com 56 m²\n%8.12\n%3.01\ninterno via Priocca\nC C\nC S/K S/K CO C\nD B D B D M B AB\nS/K\nM\nAB B\nCO IN B\nS/K C\nB AB B AB B\nM N D\nUT O\nM\nB D\nVE CT2 C S/K\nSup.com 47 m²\nCO 1.66 m CO CO CO\ncorte interna\n0.89 m\n6.4%\n0.17 m\nM 0.89 m\nàteirporp\nartla\nonasiP\naerdnA\naiv\nPPiiaannoo 00\nPIANO\n00\n*\n*\n* D UT O * VE N D UT O *\nN\nVE\n*\nAB\n*\nO UT D N VE\nO\nUT\nD\nN VE\nO\nUT\nD\nN\nVE\nO\nUT\nD N\nVE\nO UT MULINO\nD\nN\nVE\nSup.com 1398 m²\nO\nUT\nD\nN\nVE\n*\nO\nUT\nD\nN\nLa presente scheda è solo una rappresentazione schematica\nVE\ndell’alloggio nel progetto preliminare - le quote, la disposizione\ndei muri interni, gli arredi (non forniti) ed i sanitari sono\nindicativi per collocazione e numero e potranno subire delle\nvariazioni in fase esecutiva.\nNN\nDATA EMISSIONE: 30/07/2026",
+    "identifierCoordinates": [
+      {
+        "text": "BT3",
+        "x": 956.28,
+        "y": 337.43
+      },
+      {
+        "text": "BT4",
+        "x": 1148.33,
+        "y": 345.89
+      },
+      {
+        "text": "BT5",
+        "x": 1394.62,
+        "y": 366.17
+      },
+      {
+        "text": "CT3",
+        "x": 1634.37,
+        "y": 386.23
+      },
+      {
+        "text": "CT4",
+        "x": 1846.27,
+        "y": 391.01
+      },
+      {
+        "text": "CT5",
+        "x": 1967.1,
+        "y": 391.01
+      },
+      {
+        "text": "AT7",
+        "x": 645.77,
+        "y": 432.4
+      },
+      {
+        "text": "BT2",
+        "x": 849.7,
+        "y": 469.02
+      },
+      {
+        "text": "BT1",
+        "x": 916.49,
+        "y": 574.82
+      },
+      {
+        "text": "BT6",
+        "x": 1391.04,
+        "y": 621.84
+      },
+      {
+        "text": "CT1",
+        "x": 1757.18,
+        "y": 617.55
+      },
+      {
+        "text": "CT6",
+        "x": 2039.19,
+        "y": 631.37
+      },
+      {
+        "text": "AT6",
+        "x": 691.61,
+        "y": 714.1
+      },
+      {
+        "text": "AT5",
+        "x": 700.93,
+        "y": 876.3
+      },
+      {
+        "text": "AT4",
+        "x": 642.54,
+        "y": 1029.43
+      },
+      {
+        "text": "AT3",
+        "x": 676.28,
+        "y": 1125.61
+      },
+      {
+        "text": "AT2",
+        "x": 730.83,
+        "y": 1253.75
+      },
+      {
+        "text": "AT1",
+        "x": 679.84,
+        "y": 1459.56
+      },
+      {
+        "text": "CT2",
+        "x": 1526.41,
+        "y": 620.26
+      },
+      {
+        "text": "MULINO",
+        "x": 1928.43,
+        "y": 1160.6
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "label": "Piano 1",
+    "width": 1190.52,
+    "height": 841.7999999999998,
+    "bbox": [
+      -595.26,
+      420.9,
+      595.26,
+      1262.6999999999998
+    ],
+    "chars": 1137,
+    "lines": 114,
+    "curves": 4,
+    "rects": 27,
+    "images": 23,
+    "identifiers": [
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "A15",
+      "A16",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "MULINO"
+    ],
+    "text": "interno via Priocca\nTipologia unità immobiliari C B12 C B13 C C C S/K Sup.com 57 m² C C13 C14 C\n1 .Monolocale Sup.com 54 m²\nSup.com 50 m²\nA11 S/K B Sup.com 50 m²\n1.Monolocale Sup.com 44 m² S/K D B D\nB\nD B C.A\n2.Bilocale M Scala C\nScala B IN 54.77 m² IN B\n51.15 m²\n3.Trilocale C\nD\nUfficio IN B S/K B14 B B\nA12 C12 M B D\nB11 Sup.com 96 m² Scala A * In vendita con arredi da capitolato Sup.com 57 m² Sup.com 91 m² AB\n75.05 m² Sup.com 67 m² S/K C S/K C11 S/K C15\nS/K Sup.com 42 m² Sup.com 57 m²\nLegenda locali\nM Monocamera\nS/K Soggiorno/Cucina BA BA BA BA BA\nK Cucina\nA13\nS Soggiorno\nSup.com 44 m² BA\nC Camera\nB Bagno M corte interna\nR Ripostiglio\nIN Ingresso AB\nAB Antibagno\nD Disimpegno\nL Lavanderia\nB\nC.A Cabina Armadio C BA\nSP Soppalco\nD\nCO Cortile\nBA Balcone A14\nS/K\nSO Soffitta Sup.com 50 m²\nTE Terrazzo\nN.A Non Accessibile\nA15\nSup.com 49 m²\nC BA\nS/K\nA16\nSup.com 82 m²\nS/K\nBA\nàteirporp\nartla\nonasiP\naerdnA\naiv\nPPiiaannoo 11\nPIANO\n11\nUT O * D N VE\nBA\nAB C\nB\nB\nMULINO\nSup.com 1398 m²\nD\nB\nC\nB D\nLa presente scheda è solo una rappresentazione schematica\ndell’alloggio nel progetto preliminare - le quote, la disposizione\ndei muri interni, gli arredi (non forniti) ed i sanitari sono\nindicativi per collocazione e numero e potranno subire delle\nvariazioni in fase esecutiva.\nNN\nDATA EMISSIONE: 03/08/2026",
+    "identifierCoordinates": [
+      {
+        "text": "B12",
+        "x": 971.36,
+        "y": 355.33
+      },
+      {
+        "text": "B13",
+        "x": 1176.68,
+        "y": 361.6
+      },
+      {
+        "text": "C13",
+        "x": 1869.58,
+        "y": 383.44
+      },
+      {
+        "text": "C14",
+        "x": 1997.22,
+        "y": 374.9
+      },
+      {
+        "text": "A11",
+        "x": 667.91,
+        "y": 410.35
+      },
+      {
+        "text": "B14",
+        "x": 1410.63,
+        "y": 550.09
+      },
+      {
+        "text": "A12",
+        "x": 853.3,
+        "y": 567.11
+      },
+      {
+        "text": "C12",
+        "x": 1639.02,
+        "y": 568.78
+      },
+      {
+        "text": "B11",
+        "x": 1069.36,
+        "y": 579.66
+      },
+      {
+        "text": "C11",
+        "x": 1776.9,
+        "y": 611.65
+      },
+      {
+        "text": "C15",
+        "x": 2052.66,
+        "y": 611.65
+      },
+      {
+        "text": "A13",
+        "x": 720.68,
+        "y": 749.02
+      },
+      {
+        "text": "A14",
+        "x": 745.65,
+        "y": 1028.55
+      },
+      {
+        "text": "A15",
+        "x": 755.34,
+        "y": 1132.37
+      },
+      {
+        "text": "A16",
+        "x": 765.51,
+        "y": 1328.24
+      },
+      {
+        "text": "MULINO",
+        "x": 2035.74,
+        "y": 1093.27
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "label": "Piano 2",
+    "width": 1190.52,
+    "height": 841.7999999999998,
+    "bbox": [
+      -595.26,
+      420.9,
+      595.26,
+      1262.6999999999998
+    ],
+    "chars": 1023,
+    "lines": 114,
+    "curves": 3,
+    "rects": 27,
+    "images": 23,
+    "identifiers": [
+      "A13",
+      "A14",
+      "A15",
+      "A16",
+      "B21",
+      "B24",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "MULINO"
+    ],
+    "text": "interno via Priocca\nTipologia unità immobiliari\n1 2 . . M Bi o lo n c o a lo le cale C C Sup.c B o 2 m 2 45 m² B S/ 2 K 3 C C B24 C C S/K S/K\nS/K Sup.com 51 m² Sup.com 89 m² C C23 C24 C\n3.Trilocale L D B B B D Sup.com 49 m² Sup.com 49 m²\n4.Quadrilocale IN D C.A B\nC D B B Scala C\nSoffitta Scala B 54.58 m² IN B\n56.29 m²\nUfficio D C\nB\n* In vendita con arredi da capitolato S/K C22 M B B D\nB21 S/K\nSup.com 92 m² C21 AB\nC\nLegenda locali Sup.com 165 m² S/K Sup.com 42 m² S/K C25\nSup.com 58 m²\nM Monocamera\nS/K Soggiorno/Cucina\nK Cucina BA BA BA BA\nS Soggiorno\nC Camera\nB Bagno corte interna\nR Ripostiglio\nIN Ingresso\nAB Antibagno\nD Disimpegno\nL Lavanderia\nC.A Cabina Armadio\nSP Soppalco\nCO Cortile\nBA Balcone\nSO Soffitta\nTE Terrazzo\nN.A Non Accessibile\nàteirporp\nartla\nonasiP\naerdnA\naiv\nPPiiaannoo 22\nPIANO\n22\nTE\nIN\nC.A\nB\nB\nTE\nA13\nSO\nA14\nSO\nMULINO\nA15\nSup.com 1398 m²\nSO\nA16\nSO\nLa presente scheda è solo una rappresentazione schematica\ndell’alloggio nel progetto preliminare - le quote, la disposizione\ndei muri interni, gli arredi (non forniti) ed i sanitari sono\nindicativi per collocazione e numero e potranno subire delle\nvariazioni in fase esecutiva.\nNN\nDATA EMISSIONE: 30/07/2026",
+    "identifierCoordinates": [
+      {
+        "text": "B24",
+        "x": 1582.06,
+        "y": 346.36
+      },
+      {
+        "text": "C23",
+        "x": 1943.87,
+        "y": 380.96
+      },
+      {
+        "text": "C24",
+        "x": 2070.27,
+        "y": 378.88
+      },
+      {
+        "text": "C22",
+        "x": 1710.34,
+        "y": 563.8
+      },
+      {
+        "text": "B21",
+        "x": 972.03,
+        "y": 583.47
+      },
+      {
+        "text": "C21",
+        "x": 1835.92,
+        "y": 590.41
+      },
+      {
+        "text": "C25",
+        "x": 2124.78,
+        "y": 613.08
+      },
+      {
+        "text": "A13",
+        "x": 746.53,
+        "y": 803.17
+      },
+      {
+        "text": "A14",
+        "x": 779.83,
+        "y": 983.34
+      },
+      {
+        "text": "MULINO",
+        "x": 2021.09,
+        "y": 1155.75
+      },
+      {
+        "text": "A15",
+        "x": 808.77,
+        "y": 1167.65
+      },
+      {
+        "text": "A16",
+        "x": 818.72,
+        "y": 1381.78
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "label": "Piano 3",
+    "width": 1190.52,
+    "height": 841.7999999999998,
+    "bbox": [
+      -595.26,
+      420.9,
+      595.26,
+      1262.6999999999998
+    ],
+    "chars": 967,
+    "lines": 110,
+    "curves": 3,
+    "rects": 20,
+    "images": 23,
+    "identifiers": [
+      "B31",
+      "B32",
+      "B33",
+      "B34",
+      "C31",
+      "C32",
+      "C34",
+      "MULINO"
+    ],
+    "text": "interno via Priocca\nB33\nTipologia unità immobiliari C Sup.c C om 48 m² S/K C B C C C C Su C p.c C o 3 m 3 47 m² S/K C\nC\n1.Monolocale B D D B D\nD B B D\n2.Bilocale B B\nScala B IN\n3.Trilocale IN 61.44 m² C32 D\nSup.com 86 m² B C 4.Quadrilocale B32\nB34\nUfficio Sup.com 60 m² B31 S/K C31\nS/K C Sup.com 143 m² Sup.com 66 m² S/K Sup.com 43 m² C34\n* In vendita con arredi da capitolato M Sup.com 106 m²\nAB B S/K\nLegenda locali\nBA BA BA BA BA Scala C\nM Monocamera 58.97 m²\nS/K Soggiorno/Cucina\nK Cucina\ncorte interna\nS Soggiorno\nC Camera\nB Bagno\nR Ripostiglio\nIN Ingresso\nAB Antibagno\nD Disimpegno\nL Lavanderia\nC.A Cabina Armadio\nSP Soppalco\nCO Cortile\nBA Balcone\nSO Soffitta\nTE Terrazzo\nN.A Non Accessibile\nàteirporp\nartla\nonasiP\naerdnA\naiv\nPPiiaannoo 33\nPIANO\n33\nAB\nS/K\nB\nMULINO\nSup.com 1398 m²\nLa presente scheda è solo una rappresentazione schematica\ndell’alloggio nel progetto preliminare - le quote, la disposizione\ndei muri interni, gli arredi (non forniti) ed i sanitari sono\nindicativi per collocazione e numero e potranno subire delle\nvariazioni in fase esecutiva.\nNN\nDATA EMISSIONE: 30/07/2026",
+    "identifierCoordinates": [
+      {
+        "text": "B33",
+        "x": 1020.29,
+        "y": 330.19
+      },
+      {
+        "text": "C32",
+        "x": 1670.99,
+        "y": 491.81
+      },
+      {
+        "text": "B32",
+        "x": 896.19,
+        "y": 537.88
+      },
+      {
+        "text": "B34",
+        "x": 1497.63,
+        "y": 557.08
+      },
+      {
+        "text": "B31",
+        "x": 1115.41,
+        "y": 569.05
+      },
+      {
+        "text": "C31",
+        "x": 1802.56,
+        "y": 574.76
+      },
+      {
+        "text": "C34",
+        "x": 2087.61,
+        "y": 597.85
+      },
+      {
+        "text": "MULINO",
+        "x": 1999.56,
+        "y": 1128.1
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "label": "Piano 4",
+    "width": 1190.52,
+    "height": 841.7999999999998,
+    "bbox": [
+      -595.26,
+      420.9,
+      595.26,
+      1262.6999999999998
+    ],
+    "chars": 914,
+    "lines": 103,
+    "curves": 4,
+    "rects": 14,
+    "images": 23,
+    "identifiers": [
+      "B41",
+      "B42",
+      "B43",
+      "B44",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "text": "interno via Priocca\nTipologia unità immobiliari\nB43\n2.Bilocale B42 Sup.com 51 m²\nSup.com 45 m²\n3.Trilocale\n4.Quadrilocale\n* In vendita con arredi da capitolato\nLegenda locali\nM Monocamera B41 B44 C41 C43\nS/K Soggiorno/Cucina Sup.com 134 m² Sup.com 146 m² Sup.com 136 m² Sup.com 144 m²\nK Cucina\nS Soggiorno\nC Camera\nB Bagno\nR Ripostiglio\nIN Ingresso\nAB Antibagno corte interna\nD Disimpegno\nL Lavanderia\nC.A Cabina Armadio\nSP Soppalco\nCO Cortile\nBA Balcone\nSO Soffitta\nTE Terrazzo\nN.A Non Accessibile\nàteirporp\nartla\nonasiP\naerdnA\naiv\nPPiiaannoo 44\nPIANO\n44\nC\nC S/K\nC C C C C C C42\nS/K C\nB D Sup.com 78 m² D\nS/K D B\nC.A\nB Scala B D B D B\nD 56.03 m² B L\nC IN\nL\nB\nS/K S/K\nC C.A C\nS/K Scala C\nB\n24.89 m²\nBA BA BA UT O\nD\nN\nVE\nBA\nLa presente scheda è solo una rappresentazione schematica\ndell’alloggio nel progetto preliminare - le quote, la disposizione\ndei muri interni, gli arredi (non forniti) ed i sanitari sono\nindicativi per collocazione e numero e potranno subire delle\nvariazioni in fase esecutiva.\nNN\nDATA EMISSIONE: 30/07/2026",
+    "identifierCoordinates": [
+      {
+        "text": "B43",
+        "x": 1271.06,
+        "y": 365.28
+      },
+      {
+        "text": "B42",
+        "x": 1136.16,
+        "y": 392.43
+      },
+      {
+        "text": "B41",
+        "x": 993.46,
+        "y": 618.59
+      },
+      {
+        "text": "B44",
+        "x": 1564.04,
+        "y": 621.59
+      },
+      {
+        "text": "C41",
+        "x": 1819.05,
+        "y": 621.59
+      },
+      {
+        "text": "C43",
+        "x": 2152.47,
+        "y": 621.59
+      },
+      {
+        "text": "C42",
+        "x": 1975.67,
+        "y": 403.27
+      }
+    ]
+  },
+  {
+    "page": 6,
+    "label": "Piano 4 · soppalchi",
+    "width": 1190.52,
+    "height": 841.7999999999998,
+    "bbox": [
+      -595.26,
+      420.9,
+      595.26,
+      1262.6999999999998
+    ],
+    "chars": 799,
+    "lines": 95,
+    "curves": 4,
+    "rects": 11,
+    "images": 23,
+    "identifiers": [
+      "B44",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "text": "interno Via Priocca\nSP C42\nTipologia unità immobiliari\nN.A Sup.com 78 m² C43\n2.Bilocale C41 Sup.com 144 m²\nSup.com 136 m² B44 3.Trilocale SP\nSP\nSup.com 146 m²\n4.Quadrilocale\n* In vendita con arredi da capitolato\nLegenda locali\nM Monocamera\nS/K Soggiorno/Cucina\nK Cucina\ncorte interna\nS Soggiorno\nC Camera\nB Bagno\nR Ripostiglio\nIN Ingresso\nAB Antibagno\nD Disimpegno\nL Lavanderia\nC.A Cabina Armadio\nSP Soppalco\nCO Cortile\nBA Balcone\nSO Soffitta\nTE Terrazzo\nN.A Non Accessibile\nàteirporp\nartla\nonasiP\naerdnA\naiv\nPPiiaannoo 44\nPIANO\n44\nN.A\nN.A N.A\nN.A O\nUT\nD N.A VE N SO\nLa presente scheda è solo una rappresentazione schematica\ndell’alloggio nel progetto preliminare - le quote, la disposizione\ndei muri interni, gli arredi (non forniti) ed i sanitari sono\nindicativi per collocazione e numero e potranno subire delle\nvariazioni in fase esecutiva.\nNN\nDATA EMISSIONE: 30/07/2026",
+    "identifierCoordinates": [
+      {
+        "text": "C42",
+        "x": 1892.14,
+        "y": 349.63
+      },
+      {
+        "text": "C43",
+        "x": 2082.92,
+        "y": 372.61
+      },
+      {
+        "text": "C41",
+        "x": 1735.86,
+        "y": 398.21
+      },
+      {
+        "text": "B44",
+        "x": 1447.3,
+        "y": 436.2
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "label": "Piano 5",
+    "width": 1190.52,
+    "height": 841.7999999999998,
+    "bbox": [
+      -595.26,
+      420.9,
+      595.26,
+      1262.6999999999998
+    ],
+    "chars": 794,
+    "lines": 97,
+    "curves": 4,
+    "rects": 9,
+    "images": 23,
+    "identifiers": [
+      "B51",
+      "B52",
+      "B53",
+      "C43"
+    ],
+    "text": "interno via Priocca\nTipologia unità immobiliari\nB53\n2.Bilocale ST Sup.com 87 m²\nB52\n3.Trilocale M\nSup.com 86 m²\n* In vendita con arredi da capitolato\nLegenda locali\nM Monocamera\nB51\nS/K Soggiorno/Cucina\nSup.com 56 m²\nK Cucina\nS Soggiorno S/K Scala B C Camera\n48.54 m²\nB Bagno\nR Ripostiglio\nIN Ingresso C43\nAB Antibagno Sup.com 144 m²\nD Disimpegno\ncorte interna\nL Lavanderia\nC.A Cabina Armadio\nSP Soppalco\nCO Cortile\nBA Balcone\nSO Soffitta\nTE Terrazzo\nN.A Non Accessibile\nàteirporp\nartla\nonasiP\naerdnA\naiv\nPPiiaannoo 55\nPIANO\n55\nS/K\nB B\nDEP\nIN\nAB\nC\nB D C\nO\nUT\nD N\nVE\nLa presente scheda è solo una rappresentazione schematica\ndell’alloggio nel progetto preliminare - le quote, la disposizione\ndei muri interni, gli arredi (non forniti) ed i sanitari sono\nindicativi per collocazione e numero e potranno subire delle\nvariazioni in fase esecutiva.\nNN\nDATA EMISSIONE: 30/07/2026",
+    "identifierCoordinates": [
+      {
+        "text": "B53",
+        "x": 1226.03,
+        "y": 390.27
+      },
+      {
+        "text": "B52",
+        "x": 866.21,
+        "y": 439.37
+      },
+      {
+        "text": "B51",
+        "x": 954.59,
+        "y": 612.46
+      },
+      {
+        "text": "C43",
+        "x": 1972.17,
+        "y": 765.65
+      }
+    ]
+  },
+  {
+    "page": 8,
+    "label": "Piano −1",
+    "width": 1190.52,
+    "height": 841.7999999999998,
+    "bbox": [
+      -595.26,
+      420.9,
+      595.26,
+      1262.6999999999998
+    ],
+    "chars": 1153,
+    "lines": 60,
+    "curves": 17,
+    "rects": 109,
+    "images": 23,
+    "identifiers": [
+      "BX101",
+      "BX102",
+      "BX103",
+      "BX104",
+      "CA101",
+      "CA102",
+      "CA103",
+      "CA105",
+      "CA106",
+      "CA107",
+      "CA108",
+      "CA109",
+      "CA110",
+      "CA111",
+      "CA112",
+      "CA113",
+      "CA114",
+      "CA115",
+      "CA116",
+      "CA117",
+      "CA118",
+      "CA119",
+      "CA120",
+      "CA121",
+      "CA122",
+      "CA123",
+      "CA124",
+      "CA125",
+      "CA126",
+      "CA127",
+      "CA128",
+      "CA129",
+      "CA130",
+      "CA131",
+      "CA132",
+      "CA133",
+      "CA134",
+      "CA135",
+      "CA136",
+      "CA137",
+      "CA138",
+      "CA139+140",
+      "CA141",
+      "CA142",
+      "CA143",
+      "CA144",
+      "CA145",
+      "CA146",
+      "CA147",
+      "CA148",
+      "CA149",
+      "CA150",
+      "CA151",
+      "CA152",
+      "CA153",
+      "CA154",
+      "CA155",
+      "CA156",
+      "CA157",
+      "CA158",
+      "CA159",
+      "CA160",
+      "CA161",
+      "CA162",
+      "CA163",
+      "MULINO",
+      "PA101",
+      "PA102",
+      "PA103",
+      "PA104",
+      "PA105",
+      "PA106",
+      "PA107",
+      "PA108",
+      "PA109",
+      "PA110",
+      "PA111",
+      "PA112",
+      "PA113",
+      "PA114",
+      "PA115",
+      "PA116",
+      "PA117",
+      "PA118",
+      "PA119",
+      "PA120",
+      "PA121",
+      "PA122",
+      "PA123",
+      "PA124",
+      "PA125",
+      "PA126",
+      "PA127",
+      "PA128",
+      "PA129",
+      "PA130",
+      "PA131",
+      "PA132"
+    ],
+    "text": "Tipologia unità immobiliari\nBox auto\nCantina\nCA157\nMagazzino\nPosto auto Isola ecologica\nPosto bici CA106\nCA107 CA147\nCA112 CA111 CA110 CA109 CA108\nCA105 CA148 CA149 CA150 CA151 CA152 CA153 CA154\nCA113 CA114 CA115 CA116 CA117 CA132\nCA146 CA145 CA144 CA143 CA142 CA141\nCA118 CA103 Locale di trasformazione\nCA123 CA122 CA121 CA120 CA119 CA131 CA102 CA133 CA134 CA135 CA136 CA137 CA138 CA139+140\nCA130\nCA101\nCA124 CA125 CA126 CA127 CA128 CA129\nirotatnoc\nelacoL\nPA105 PA106 PA107 PA108\nPA103 PA104\nPA101 PA102 Posto bici\n%9.01\n%8.12\nCabina IRETI\nPA109 PA110 PA114\nPA112 PA113\nPA125 PA124 PA123 PA122 PA120 PA119 PA118\nPA128 PA129 PA130 PA131 PA132\nPA126 PA127\n2S\nonaiP\nla\nossecca\nid\napmaR\nBX101 BX102 BX103 BX104 CA163 CA162 CA161 CA160 CA159 CA158 CA156 CA155\nPA111\nPA115 PA116 PA117\nPA121\nicib\notsoP\nicib\notsoP\nicib\notsoP\nPPiiaannoo --11\nPIANO\n--11\nCentrale termica\nAssociata a Associata a Associata a Associata a\nCA111 CA109 CA107 CA106\nV\nV\nV\nScala\nR R V V V Posto bici\nR R\nR\nMULINO\nR R R\nLa presente scheda è solo una rappresentazione schematica\ndell’alloggio nel progetto preliminare - le quote, la disposizione\ndei muri interni, gli arredi (non forniti) ed i sanitari sono\nindicativi per collocazione e numero e potranno subire delle\nvariazioni in fase esecutiva.\nNN\nDATA EMISSIONE: 30/07/2026",
+    "identifierCoordinates": [
+      {
+        "text": "CA157",
+        "x": 1647.33,
+        "y": 381.83
+      },
+      {
+        "text": "CA106",
+        "x": 1167.93,
+        "y": 484.53
+      },
+      {
+        "text": "CA107",
+        "x": 1088.18,
+        "y": 496.39
+      },
+      {
+        "text": "CA147",
+        "x": 1374.93,
+        "y": 498.13
+      },
+      {
+        "text": "CA112",
+        "x": 823.15,
+        "y": 504.71
+      },
+      {
+        "text": "CA111",
+        "x": 867.16,
+        "y": 504.71
+      },
+      {
+        "text": "CA110",
+        "x": 913.63,
+        "y": 504.71
+      },
+      {
+        "text": "CA109",
+        "x": 960.57,
+        "y": 504.71
+      },
+      {
+        "text": "CA108",
+        "x": 1016.2,
+        "y": 504.71
+      },
+      {
+        "text": "CA105",
+        "x": 1288.55,
+        "y": 514.99
+      },
+      {
+        "text": "CA148",
+        "x": 1430.11,
+        "y": 514.42
+      },
+      {
+        "text": "CA149",
+        "x": 1483.62,
+        "y": 514.42
+      },
+      {
+        "text": "CA150",
+        "x": 1541.85,
+        "y": 514.99
+      },
+      {
+        "text": "CA151",
+        "x": 1595.9,
+        "y": 514.42
+      },
+      {
+        "text": "CA152",
+        "x": 1637.97,
+        "y": 514.42
+      },
+      {
+        "text": "CA153",
+        "x": 1682.22,
+        "y": 514.42
+      },
+      {
+        "text": "CA154",
+        "x": 1734.81,
+        "y": 514.42
+      },
+      {
+        "text": "CA113",
+        "x": 827.78,
+        "y": 582.33
+      },
+      {
+        "text": "CA114",
+        "x": 873.44,
+        "y": 582.33
+      },
+      {
+        "text": "CA115",
+        "x": 916.98,
+        "y": 582.33
+      },
+      {
+        "text": "CA116",
+        "x": 960.57,
+        "y": 582.33
+      },
+      {
+        "text": "CA117",
+        "x": 1013.21,
+        "y": 577.97
+      },
+      {
+        "text": "CA132",
+        "x": 1103.5,
+        "y": 585.46
+      },
+      {
+        "text": "CA146",
+        "x": 1384.44,
+        "y": 594.89
+      },
+      {
+        "text": "CA145",
+        "x": 1437.25,
+        "y": 594.89
+      },
+      {
+        "text": "CA144",
+        "x": 1499.74,
+        "y": 594.89
+      },
+      {
+        "text": "CA143",
+        "x": 1554.09,
+        "y": 594.89
+      },
+      {
+        "text": "CA142",
+        "x": 1615.24,
+        "y": 594.89
+      },
+      {
+        "text": "CA141",
+        "x": 1668.26,
+        "y": 594.89
+      },
+      {
+        "text": "CA118",
+        "x": 1016.2,
+        "y": 615.01
+      },
+      {
+        "text": "CA103",
+        "x": 1167.12,
+        "y": 620.82
+      },
+      {
+        "text": "CA123",
+        "x": 829.1,
+        "y": 639.3
+      },
+      {
+        "text": "CA122",
+        "x": 873.86,
+        "y": 640.47
+      },
+      {
+        "text": "CA121",
+        "x": 917.79,
+        "y": 640.47
+      },
+      {
+        "text": "CA120",
+        "x": 960.57,
+        "y": 640.47
+      },
+      {
+        "text": "CA119",
+        "x": 1016.2,
+        "y": 652.69
+      },
+      {
+        "text": "CA131",
+        "x": 1103.5,
+        "y": 634.24
+      },
+      {
+        "text": "CA102",
+        "x": 1167.93,
+        "y": 649.53
+      },
+      {
+        "text": "CA133",
+        "x": 1382.09,
+        "y": 645.38
+      },
+      {
+        "text": "CA134",
+        "x": 1437.25,
+        "y": 645.38
+      },
+      {
+        "text": "CA135",
+        "x": 1499.74,
+        "y": 645.38
+      },
+      {
+        "text": "CA136",
+        "x": 1559.21,
+        "y": 643.52
+      },
+      {
+        "text": "CA137",
+        "x": 1615.24,
+        "y": 643.52
+      },
+      {
+        "text": "CA138",
+        "x": 1668.26,
+        "y": 643.52
+      },
+      {
+        "text": "CA139+140",
+        "x": 1716.31,
+        "y": 643.52
+      },
+      {
+        "text": "CA130",
+        "x": 1103.5,
+        "y": 682.22
+      },
+      {
+        "text": "CA101",
+        "x": 1167.93,
+        "y": 692.41
+      },
+      {
+        "text": "CA124",
+        "x": 820.1,
+        "y": 727.72
+      },
+      {
+        "text": "CA125",
+        "x": 874.46,
+        "y": 726.51
+      },
+      {
+        "text": "CA126",
+        "x": 931.36,
+        "y": 726.51
+      },
+      {
+        "text": "CA127",
+        "x": 978.03,
+        "y": 727.72
+      },
+      {
+        "text": "CA128",
+        "x": 1024.25,
+        "y": 727.72
+      },
+      {
+        "text": "CA129",
+        "x": 1065.93,
+        "y": 727.72
+      },
+      {
+        "text": "PA105",
+        "x": 1352.52,
+        "y": 800.45
+      },
+      {
+        "text": "PA106",
+        "x": 1422.5,
+        "y": 800.45
+      },
+      {
+        "text": "PA107",
+        "x": 1532.37,
+        "y": 800.45
+      },
+      {
+        "text": "PA108",
+        "x": 1622.0,
+        "y": 798.86
+      },
+      {
+        "text": "PA103",
+        "x": 862.88,
+        "y": 808.95
+      },
+      {
+        "text": "PA104",
+        "x": 1013.42,
+        "y": 808.95
+      },
+      {
+        "text": "PA101",
+        "x": 636.71,
+        "y": 824.09
+      },
+      {
+        "text": "PA102",
+        "x": 715.86,
+        "y": 824.07
+      },
+      {
+        "text": "PA109",
+        "x": 769.53,
+        "y": 1077.36
+      },
+      {
+        "text": "PA110",
+        "x": 866.99,
+        "y": 1077.36
+      },
+      {
+        "text": "PA114",
+        "x": 1275.76,
+        "y": 1076.34
+      },
+      {
+        "text": "PA112",
+        "x": 1092.46,
+        "y": 1083.58
+      },
+      {
+        "text": "PA113",
+        "x": 1197.13,
+        "y": 1084.32
+      },
+      {
+        "text": "PA125",
+        "x": 784.1,
+        "y": 1205.05
+      },
+      {
+        "text": "PA124",
+        "x": 910.81,
+        "y": 1205.05
+      },
+      {
+        "text": "PA123",
+        "x": 1092.63,
+        "y": 1212.08
+      },
+      {
+        "text": "PA122",
+        "x": 1199.01,
+        "y": 1206.5
+      },
+      {
+        "text": "PA120",
+        "x": 1488.21,
+        "y": 1211.83
+      },
+      {
+        "text": "PA119",
+        "x": 1554.45,
+        "y": 1211.7
+      },
+      {
+        "text": "PA118",
+        "x": 1627.45,
+        "y": 1211.58
+      },
+      {
+        "text": "PA128",
+        "x": 936.66,
+        "y": 1470.98
+      },
+      {
+        "text": "PA129",
+        "x": 1099.92,
+        "y": 1469.55
+      },
+      {
+        "text": "PA130",
+        "x": 1239.12,
+        "y": 1465.82
+      },
+      {
+        "text": "PA131",
+        "x": 1387.61,
+        "y": 1465.82
+      },
+      {
+        "text": "PA132",
+        "x": 1657.63,
+        "y": 1468.81
+      },
+      {
+        "text": "PA126",
+        "x": 682.91,
+        "y": 1488.93
+      },
+      {
+        "text": "PA127",
+        "x": 748.5,
+        "y": 1489.07
+      },
+      {
+        "text": "BX101",
+        "x": 849.18,
+        "y": 385.2
+      },
+      {
+        "text": "BX102",
+        "x": 948.8,
+        "y": 385.9
+      },
+      {
+        "text": "BX103",
+        "x": 1049.84,
+        "y": 385.2
+      },
+      {
+        "text": "BX104",
+        "x": 1142.66,
+        "y": 385.16
+      },
+      {
+        "text": "CA163",
+        "x": 1378.74,
+        "y": 381.83
+      },
+      {
+        "text": "CA162",
+        "x": 1421.77,
+        "y": 381.83
+      },
+      {
+        "text": "CA161",
+        "x": 1465.33,
+        "y": 381.83
+      },
+      {
+        "text": "CA160",
+        "x": 1509.95,
+        "y": 380.83
+      },
+      {
+        "text": "CA159",
+        "x": 1554.98,
+        "y": 381.83
+      },
+      {
+        "text": "CA158",
+        "x": 1600.87,
+        "y": 381.83
+      },
+      {
+        "text": "CA156",
+        "x": 1694.98,
+        "y": 381.83
+      },
+      {
+        "text": "CA155",
+        "x": 1743.77,
+        "y": 383.35
+      },
+      {
+        "text": "PA111",
+        "x": 939.64,
+        "y": 1076.21
+      },
+      {
+        "text": "PA115",
+        "x": 1488.21,
+        "y": 1083.81
+      },
+      {
+        "text": "PA116",
+        "x": 1558.59,
+        "y": 1083.81
+      },
+      {
+        "text": "PA117",
+        "x": 1627.45,
+        "y": 1083.81
+      },
+      {
+        "text": "PA121",
+        "x": 1275.76,
+        "y": 1206.38
+      },
+      {
+        "text": "CA111",
+        "x": 850.54,
+        "y": 426.1
+      },
+      {
+        "text": "CA109",
+        "x": 950.53,
+        "y": 426.1
+      },
+      {
+        "text": "CA107",
+        "x": 1044.81,
+        "y": 426.1
+      },
+      {
+        "text": "CA106",
+        "x": 1136.23,
+        "y": 426.1
+      },
+      {
+        "text": "MULINO",
+        "x": 1952.2,
+        "y": 1235.82
+      }
+    ]
+  },
+  {
+    "page": 9,
+    "label": "Piano −2",
+    "width": 1190.52,
+    "height": 841.7999999999998,
+    "bbox": [
+      -595.26,
+      420.9,
+      595.26,
+      1262.6999999999998
+    ],
+    "chars": 869,
+    "lines": 18,
+    "curves": 9,
+    "rects": 53,
+    "images": 23,
+    "identifiers": [
+      "PA201",
+      "PA202",
+      "PA203",
+      "PA204",
+      "PA205",
+      "PA206",
+      "PA207",
+      "PA208",
+      "PA209",
+      "PA210",
+      "PA211",
+      "PA212",
+      "PA213",
+      "PA214",
+      "PA215",
+      "PA216",
+      "PA217",
+      "PA218",
+      "PA219",
+      "PA220",
+      "PA221",
+      "PA222",
+      "PA223",
+      "PA224",
+      "PA225",
+      "PA226",
+      "PA227",
+      "PA228",
+      "PA229",
+      "PA230",
+      "PA231",
+      "PA232",
+      "PA233",
+      "PA234",
+      "PA235",
+      "PA236",
+      "PA237",
+      "PA238",
+      "PA239",
+      "PA240",
+      "PA241",
+      "PA242",
+      "PA243",
+      "PA244",
+      "PA245",
+      "PA246",
+      "PA247",
+      "PA248",
+      "PA249",
+      "PA250"
+    ],
+    "text": "Tipologia unità immobiliari\nPosto auto\nTerrapieno\nCorsello\nci piove\nci piove\nci piove\nevoip\nic\nevoip\nic\nevoip\nic\nScala di accesso Scala di accesso\nal Piano 0 (cortile) al Piano 0 (cortile)\n2S\nonaiP\nla\nossecca\nid\napmaR\nPPiiaannoo --22\nPIANO\n--22\nPA250 PA249 PA248 PA247 PA246 PA245 PA244 PA243 PA242 PA241 PA240 PA239 PA238\nPA201 PA237 PA236 PA235 PA234 PA233 PA232 PA231 PA230 PA229 PA228 PA227\nPA216 PA217 PA218 PA219 PA220 PA221 PA222 PA223 PA224 PA225 PA226 PA202\nL.T\nPA207 PA208 PA209 PA210 PA211 PA212 PA213 PA214 PA215\nPA203 PA204 PA205 PA206\nLa presente scheda è solo una rappresentazione schematica\ndell’alloggio nel progetto preliminare - le quote, la disposizione\ndei muri interni, gli arredi (non forniti) ed i sanitari sono\nindicativi per collocazione e numero e potranno subire delle\nvariazioni in fase esecutiva.\nNN\nI posti auto non hanno la possibilità di\nDATA EMISSIONE: 30/07/2026\navere postazione di carica auto elettrica",
+    "identifierCoordinates": [
+      {
+        "text": "PA250",
+        "x": 826.02,
+        "y": 805.13
+      },
+      {
+        "text": "PA249",
+        "x": 899.11,
+        "y": 807.86
+      },
+      {
+        "text": "PA248",
+        "x": 968.91,
+        "y": 807.86
+      },
+      {
+        "text": "PA247",
+        "x": 1037.86,
+        "y": 807.86
+      },
+      {
+        "text": "PA246",
+        "x": 1096.4,
+        "y": 807.86
+      },
+      {
+        "text": "PA245",
+        "x": 1212.61,
+        "y": 801.13
+      },
+      {
+        "text": "PA244",
+        "x": 1268.98,
+        "y": 801.13
+      },
+      {
+        "text": "PA243",
+        "x": 1340.56,
+        "y": 801.13
+      },
+      {
+        "text": "PA242",
+        "x": 1416.67,
+        "y": 801.13
+      },
+      {
+        "text": "PA241",
+        "x": 1483.68,
+        "y": 801.13
+      },
+      {
+        "text": "PA240",
+        "x": 1542.05,
+        "y": 801.13
+      },
+      {
+        "text": "PA239",
+        "x": 1616.73,
+        "y": 801.13
+      },
+      {
+        "text": "PA238",
+        "x": 1703.21,
+        "y": 801.13
+      },
+      {
+        "text": "PA201",
+        "x": 742.97,
+        "y": 1090.65
+      },
+      {
+        "text": "PA237",
+        "x": 866.08,
+        "y": 1090.65
+      },
+      {
+        "text": "PA236",
+        "x": 932.83,
+        "y": 1090.65
+      },
+      {
+        "text": "PA235",
+        "x": 1061.7,
+        "y": 1085.14
+      },
+      {
+        "text": "PA234",
+        "x": 1130.74,
+        "y": 1085.14
+      },
+      {
+        "text": "PA233",
+        "x": 1194.78,
+        "y": 1085.14
+      },
+      {
+        "text": "PA232",
+        "x": 1263.94,
+        "y": 1085.14
+      },
+      {
+        "text": "PA231",
+        "x": 1334.41,
+        "y": 1085.14
+      },
+      {
+        "text": "PA230",
+        "x": 1399.67,
+        "y": 1085.14
+      },
+      {
+        "text": "PA229",
+        "x": 1473.56,
+        "y": 1085.14
+      },
+      {
+        "text": "PA228",
+        "x": 1540.19,
+        "y": 1085.14
+      },
+      {
+        "text": "PA227",
+        "x": 1606.55,
+        "y": 1085.14
+      },
+      {
+        "text": "PA216",
+        "x": 874.06,
+        "y": 1204.06
+      },
+      {
+        "text": "PA217",
+        "x": 939.65,
+        "y": 1204.06
+      },
+      {
+        "text": "PA218",
+        "x": 1056.52,
+        "y": 1204.06
+      },
+      {
+        "text": "PA219",
+        "x": 1130.74,
+        "y": 1204.06
+      },
+      {
+        "text": "PA220",
+        "x": 1199.66,
+        "y": 1204.06
+      },
+      {
+        "text": "PA221",
+        "x": 1263.94,
+        "y": 1204.06
+      },
+      {
+        "text": "PA222",
+        "x": 1334.41,
+        "y": 1204.06
+      },
+      {
+        "text": "PA223",
+        "x": 1408.51,
+        "y": 1204.06
+      },
+      {
+        "text": "PA224",
+        "x": 1473.56,
+        "y": 1204.06
+      },
+      {
+        "text": "PA225",
+        "x": 1546.29,
+        "y": 1204.06
+      },
+      {
+        "text": "PA226",
+        "x": 1609.79,
+        "y": 1204.06
+      },
+      {
+        "text": "PA202",
+        "x": 764.23,
+        "y": 1210.97
+      },
+      {
+        "text": "PA207",
+        "x": 1058.99,
+        "y": 1472.97
+      },
+      {
+        "text": "PA208",
+        "x": 1119.3,
+        "y": 1472.97
+      },
+      {
+        "text": "PA209",
+        "x": 1188.75,
+        "y": 1472.97
+      },
+      {
+        "text": "PA210",
+        "x": 1258.49,
+        "y": 1472.88
+      },
+      {
+        "text": "PA211",
+        "x": 1330.05,
+        "y": 1472.88
+      },
+      {
+        "text": "PA212",
+        "x": 1396.58,
+        "y": 1472.88
+      },
+      {
+        "text": "PA213",
+        "x": 1467.86,
+        "y": 1472.88
+      },
+      {
+        "text": "PA214",
+        "x": 1535.46,
+        "y": 1472.88
+      },
+      {
+        "text": "PA215",
+        "x": 1605.99,
+        "y": 1472.88
+      },
+      {
+        "text": "PA203",
+        "x": 675.85,
+        "y": 1484.65
+      },
+      {
+        "text": "PA204",
+        "x": 737.26,
+        "y": 1484.65
+      },
+      {
+        "text": "PA205",
+        "x": 884.94,
+        "y": 1484.65
+      },
+      {
+        "text": "PA206",
+        "x": 956.7,
+        "y": 1484.65
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "label": "Sezioni",
+    "width": 1190.52,
+    "height": 841.7999999999998,
+    "bbox": [
+      -595.26,
+      420.9,
+      595.26,
+      1262.6999999999998
+    ],
+    "chars": 730,
+    "lines": 15782,
+    "curves": 3599,
+    "rects": 288,
+    "images": 3,
+    "identifiers": [],
+    "text": "21.43 m\nPiano Copertura\n19.46 m\n19.05 m\nPiano Quinto\nPiano Soppalchi\n15.03 m\nPiano Quarto\n11.83 m\nPiano Terzo\nFabbricato B\n8.63 m\nPiano Secondo\n5.43 m\nPiano Primo\n1.68 m\nPiano Terra\n-1.97 m\nPiano Seminterrato\n-4.37 m\nautorimessa\nPiano Interrato\nSezione Fabbricato B\n1 : 200\n11.83 m\nPiano Terzo\n8.63 m\nPiano Secondo\n5.43 m\nPiano Primo\n1.68 m\nPiano Terra\nmulino\nFabbricato A\n-1.97 m\nPiano Seminterrato\n-4.37 m\nPiano Interrato autorimessa\nLa presente scheda è solo una rappresentazione schematica\ndell’alloggio nel progetto preliminare - le quote, la disposizione\ndei muri interni, gli arredi (non forniti) ed i sanitari sono\nindicativi per collocazione e numero e potranno subire delle\nvariazioni in fase esecutiva. Sezione Fabbricato A\nNN\n1 : 200\nDATA EMISSIONE: 30/07/2026",
+    "identifierCoordinates": []
+  }
+]

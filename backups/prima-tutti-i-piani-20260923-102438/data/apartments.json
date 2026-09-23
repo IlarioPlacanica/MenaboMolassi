@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 1,
+  "viewBox": [
+    0,
+    0,
+    2400,
+    1698
+  ],
+  "source": "2026 08 27_Corte Molassi_Complessivo Piani.pdf",
+  "floors": [
+    {
+      "id": "p0",
+      "label": "Piano 0",
+      "page": 1,
+      "image": "assets/plans/p0.jpg",
+      "mapped": false
+    },
+    {
+      "id": "p1",
+      "label": "Piano 1",
+      "page": 2,
+      "image": "assets/plans/piano-1.png",
+      "mapped": true
+    },
+    {
+      "id": "p2",
+      "label": "Piano 2",
+      "page": 3,
+      "image": "assets/plans/p2.jpg",
+      "mapped": false
+    },
+    {
+      "id": "p3",
+      "label": "Piano 3",
+      "page": 4,
+      "image": "assets/plans/p3.jpg",
+      "mapped": false
+    },
+    {
+      "id": "p4",
+      "label": "Piano 4",
+      "page": 5,
+      "image": "assets/plans/p4.jpg",
+      "mapped": false
+    },
+    {
+      "id": "p4s",
+      "label": "Piano 4 · soppalchi",
+      "page": 6,
+      "image": "assets/plans/p4s.jpg",
+      "mapped": false
+    },
+    {
+      "id": "p5",
+      "label": "Piano 5",
+      "page": 7,
+      "image": "assets/plans/p5.jpg",
+      "mapped": false
+    },
+    {
+      "id": "s1",
+      "label": "Piano −1",
+      "page": 8,
+      "image": "assets/plans/s1.jpg",
+      "mapped": false
+    },
+    {
+      "id": "s2",
+      "label": "Piano −2",
+      "page": 9,
+      "image": "assets/plans/s2.jpg",
+      "mapped": false
+    },
+    {
+      "id": "sections",
+      "label": "Sezioni",
+      "page": 10,
+      "image": "assets/plans/sections.jpg",
+      "mapped": false
+    }
+  ],
+  "units": [
+    {
+      "id": "A11",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 44,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        686,
+        420
+      ],
+      "path": "M 657,325 L 721,326 L 731,366 L 735,376 L 736,386 L 741,399 L 741,404 L 744,410 L 746,422 L 749,427 L 748,429 L 750,431 L 753,448 L 759,465 L 758,467 L 761,472 L 762,480 L 764,483 L 768,499 L 768,504 L 771,510 L 771,515 L 774,521 L 775,530 L 777,532 L 779,544 L 784,559 L 784,564 L 786,566 L 787,571 L 787,573 L 741,573 L 619,573 L 620,326 Z M 757,447 L 819,447 L 819,487 L 767,487 L 759,455 L 757,452 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "A12",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 57,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        869,
+        572
+      ],
+      "path": "M 822,283 L 927,283 L 927,594 L 929,595 L 929,598 L 927,599 L 929,601 L 927,602 L 927,689 L 927,691 L 822,690 Z M 815,693 L 819,693 L 819,695 L 822,695 L 822,693 L 922,693 L 922,730 L 921,733 L 820,732 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "A13",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 44,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        737,
+        758
+      ],
+      "path": "M 680,698 L 813,699 L 816,726 L 818,732 L 817,735 L 820,746 L 820,753 L 825,780 L 825,789 L 830,814 L 829,816 L 831,822 L 831,832 L 833,838 L 832,841 L 836,866 L 836,879 L 839,895 L 839,901 L 820,901 L 659,901 L 659,742 L 679,742 L 680,740 Z M 821,734 L 861,734 L 868,779 L 868,788 L 873,813 L 872,815 L 875,827 L 875,832 L 873,833 L 863,833 L 835,837 L 824,755 L 822,749 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "A14",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 50,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        763,
+        1030
+      ],
+      "path": "M 659,904 L 840,904 L 845,954 L 844,956 L 847,971 L 848,995 L 854,1042 L 855,1065 L 859,1092 L 852,1094 L 848,1093 L 842,1095 L 834,1095 L 676,1111 L 674,1084 L 672,1078 L 673,1076 L 671,1054 L 668,1036 L 668,1022 L 666,1016 L 664,984 L 662,977 L 662,965 L 660,959 L 661,956 L 659,945 Z M 868,896 L 882,897 L 886,945 L 888,951 L 888,962 L 891,980 L 890,984 L 892,990 L 891,993 L 895,1019 L 894,1022 L 897,1042 L 897,1053 L 899,1062 L 898,1064 L 878,1066 L 861,1068 L 858,1065 L 856,1036 L 848,970 L 846,936 L 842,907 L 842,899 L 859,897 L 862,898 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "A15",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 49,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        773,
+        1142
+      ],
+      "path": "M 857,1095 L 859,1095 L 860,1101 L 859,1103 L 861,1111 L 861,1122 L 863,1129 L 863,1142 L 865,1152 L 864,1156 L 866,1162 L 868,1194 L 870,1200 L 870,1213 L 872,1219 L 871,1222 L 873,1228 L 874,1248 L 877,1266 L 876,1271 L 878,1276 L 879,1290 L 862,1292 L 858,1291 L 852,1293 L 848,1292 L 842,1294 L 830,1294 L 823,1296 L 820,1295 L 814,1297 L 812,1296 L 794,1299 L 782,1299 L 756,1303 L 743,1303 L 728,1306 L 724,1305 L 704,1308 L 702,1306 L 692,1211 L 686,1210 L 686,1198 L 683,1183 L 684,1180 L 682,1174 L 679,1135 L 677,1126 L 678,1123 L 676,1114 L 700,1111 L 704,1112 L 710,1110 L 713,1111 L 729,1108 L 732,1109 L 738,1107 L 742,1108 L 757,1105 L 771,1105 L 776,1103 L 789,1103 L 796,1101 L 852,1097 Z M 900,1104 L 903,1105 L 904,1109 L 904,1122 L 907,1137 L 909,1170 L 911,1176 L 911,1190 L 920,1273 L 899,1273 L 888,1275 L 880,1275 L 879,1271 L 863,1109 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "A16",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 82,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        782,
+        1336
+      ],
+      "path": "M 684,1214 L 690,1215 L 689,1218 L 692,1235 L 692,1248 L 694,1253 L 694,1267 L 696,1272 L 698,1304 L 699,1309 L 702,1311 L 729,1307 L 732,1308 L 754,1305 L 756,1306 L 763,1304 L 785,1303 L 791,1301 L 794,1302 L 800,1300 L 814,1300 L 820,1298 L 852,1296 L 858,1294 L 871,1294 L 879,1292 L 881,1309 L 880,1311 L 882,1318 L 881,1320 L 887,1366 L 886,1369 L 888,1378 L 888,1389 L 890,1395 L 892,1427 L 895,1442 L 895,1456 L 899,1486 L 898,1489 L 900,1495 L 899,1499 L 902,1517 L 888,1520 L 874,1520 L 868,1522 L 866,1521 L 849,1524 L 836,1524 L 831,1526 L 794,1528 L 788,1530 L 774,1530 L 759,1533 L 755,1532 L 750,1534 L 737,1534 L 720,1537 L 708,1537 L 701,1539 L 699,1538 L 692,1540 L 656,1543 L 657,1541 L 654,1519 L 655,1517 L 650,1482 L 647,1440 L 644,1425 L 645,1420 L 641,1396 L 642,1392 L 640,1386 L 637,1340 L 635,1334 L 636,1330 L 634,1324 L 634,1311 L 632,1305 L 630,1285 L 631,1283 L 628,1268 L 629,1266 L 626,1248 L 624,1220 L 628,1221 L 643,1218 L 663,1217 L 672,1215 L 674,1216 Z M 914,1314 L 925,1315 L 925,1326 L 927,1333 L 926,1336 L 929,1357 L 928,1360 L 930,1366 L 930,1378 L 932,1385 L 932,1396 L 935,1414 L 935,1427 L 941,1471 L 941,1482 L 917,1485 L 901,1486 L 891,1379 L 884,1322 L 885,1317 L 899,1317 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "B11",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 67,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        1088,
+        593
+      ],
+      "path": "M 1071,518 L 1152,518 L 1156,571 L 1217,571 L 1217,675 L 1265,676 L 1264,691 L 1128,691 L 930,690 L 930,524 L 1070,524 Z M 924,693 L 1265,693 L 1264,733 L 925,733 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "B12",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 57,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        989,
+        365
+      ],
+      "path": "M 930,283 L 1126,283 L 1126,301 L 1128,308 L 1127,314 L 1129,322 L 1129,337 L 1131,348 L 1131,356 L 1128,356 L 1128,366 L 1130,374 L 1129,378 L 1131,385 L 1131,395 L 1134,395 L 1135,399 L 1134,404 L 1136,414 L 1136,429 L 1140,470 L 1100,470 L 1073,471 L 1074,509 L 1073,516 L 1068,516 L 1067,521 L 930,521 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "B13",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 54,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        1197,
+        371
+      ],
+      "path": "M 1129,283 L 1227,287 L 1238,286 L 1255,288 L 1268,287 L 1300,289 L 1346,289 L 1371,291 L 1372,469 L 1370,470 L 1142,470 L 1140,442 L 1141,439 L 1138,417 L 1139,411 L 1137,405 L 1138,399 L 1136,392 L 1134,393 L 1132,378 L 1133,376 L 1131,358 L 1134,358 L 1134,347 L 1132,339 L 1133,334 L 1131,326 L 1131,307 L 1129,299 L 1130,295 L 1128,288 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "B14",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 96,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        1430,
+        560
+      ],
+      "path": "M 1375,290 L 1393,292 L 1407,291 L 1427,293 L 1469,293 L 1485,295 L 1499,294 L 1549,297 L 1561,296 L 1579,298 L 1603,298 L 1603,501 L 1480,500 L 1480,578 L 1480,691 L 1368,690 L 1368,472 L 1374,472 Z M 1368,693 L 1480,693 L 1481,732 L 1383,733 L 1378,753 L 1376,754 L 1372,764 L 1367,768 L 1366,771 L 1364,771 L 1362,774 L 1360,774 L 1357,778 L 1355,778 L 1352,781 L 1349,781 L 1339,786 L 1330,787 L 1308,785 L 1295,779 L 1292,775 L 1286,772 L 1283,769 L 1283,767 L 1277,762 L 1269,742 L 1270,740 L 1268,737 L 1268,696 L 1367,696 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "C11",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 42,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        1800,
+        626
+      ],
+      "path": "M 1777,511 L 1903,512 L 1903,693 L 1852,693 L 1810,693 L 1810,690 L 1729,690 L 1729,517 L 1775,517 L 1775,512 Z M 1719,693 L 1808,693 L 1807,733 L 1720,733 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "C12",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 91,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        1653,
+        572
+      ],
+      "path": "M 1606,298 L 1696,301 L 1696,459 L 1772,460 L 1772,514 L 1726,515 L 1726,690 L 1650,691 L 1486,691 L 1484,689 L 1483,577 L 1485,504 L 1606,503 Z M 1483,693 L 1717,693 L 1717,732 L 1484,733 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "C13",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 50,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": "sold",
+      "sourcePage": 2,
+      "anchor": [
+        1885,
+        392
+      ],
+      "path": "M 1699,301 L 1764,304 L 1777,303 L 1793,305 L 1802,304 L 1871,307 L 1883,306 L 1952,309 L 1952,433 L 1954,434 L 1954,462 L 1949,462 L 1775,462 L 1775,457 L 1698,457 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "C14",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 50,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        2012,
+        382
+      ],
+      "path": "M 1955,309 L 2176,316 L 2176,449 L 2092,449 L 2064,450 L 2064,530 L 1951,530 L 1950,476 L 1951,466 L 1956,466 L 1957,464 L 1957,432 L 1954,429 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "C15",
+      "floor": "p1",
+      "type": "appartamento",
+      "commercialArea": 57,
+      "areaScope": "come riportata in tavola",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        2072,
+        623
+      ],
+      "path": "M 2068,452 L 2176,452 L 2176,694 L 2055,694 L 1950,694 L 1951,533 L 2065,533 L 2067,531 L 2066,453 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": null
+    },
+    {
+      "id": "MULINO",
+      "floor": "p1",
+      "type": "ufficio",
+      "commercialArea": 1398,
+      "areaScope": "complessiva multipiano",
+      "rooms": null,
+      "price": null,
+      "status": null,
+      "sourcePage": 2,
+      "anchor": [
+        2072,
+        1107
+      ],
+      "path": "M 1810,757 L 1970,757 L 1970,786 L 2176,786 L 2176,1433 L 2140,1433 L 2027,1433 L 2022,1418 L 2020,1416 L 2019,1409 L 2016,1405 L 1974,1405 L 1971,1410 L 1964,1433 L 1810,1433 Z",
+      "geometryMethod": "raster red-boundary tracing, manual gap repair and balcony association",
+      "verification": "visually-reviewed",
+      "notes": "Superficie del Mulino ripetuta su più piani; non è la superficie di questo solo piano."
+    }
+  ]
+}
