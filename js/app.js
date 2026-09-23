@@ -64,9 +64,9 @@
   $('save').disabled=true; const saved=await state.set(id,value==='unknown'?null:value,{seller:$('seller').value.trim(),client:$('client').value.trim()},editVersion); $('save').disabled=false; if(saved){dirty=false;message('Scheda di '+id+' salvata: '+labels[value]+'. Aggiornato in tutte le tavole dell’unità.');if($('available').checked&&value!=='available')selected=null;renderStates();detail(selected)}else {const reason=state.warning;message(reason);await state.refresh().catch(()=>{});if(selected===id){dirty=false;detail(id);message(reason+' Scheda ricaricata: verifica i dati prima di riprovare.')}}
  });
  $('export-pdf').addEventListener('click',async()=>{
-  const button=$('export-pdf'),f=floorInfo();button.disabled=true;button.textContent='Preparazione PDF…';message('Esportazione di '+f.label+' con tutti gli stati correnti, indipendentemente da filtri e zoom.');
-  try{if(dirty)throw Error('Salva la scheda prima di scaricare il PDF.');await state.refresh();await MolassiExport.download(f.id);message('PDF di '+f.label+' pronto. Il file contiene la tavola e il riepilogo di stato, venditore e cliente per ogni unità.')}
-  catch(error){message(error.message)}finally{button.disabled=false;button.textContent='Scarica PDF del piano'}
+  const button=$('export-pdf');button.disabled=true;button.textContent='Preparazione PDF completo…';message('Esportazione di tutti i piani e delle sezioni con i dati correnti, indipendentemente dal piano visualizzato e dai filtri.');
+  try{if(dirty)throw Error('Salva la scheda prima di scaricare il PDF.');await state.refresh();await MolassiExport.download();message('PDF completo pronto: tutti i piani, le sezioni e i riepiloghi di stato, venditore e cliente.')}
+  catch(error){message(error.message)}finally{button.disabled=false;button.textContent='Scarica PDF di tutti i piani'}
  });
  $('logout').addEventListener('click',async()=>{
   if(MolassiAccess.isStatic){MolassiAccess.logout();return}

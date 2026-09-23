@@ -101,15 +101,26 @@ window.MolassiExport=(()=>{
   }
  }
 
- async function download(floor){
+ async function createAll(statuses,records={}){
+  const merged=await PDFLib.PDFDocument.create();
+  for(const floor of MolassiRepository.floors){
+   const bytes=await create(floor.id,statuses,records);
+   const section=await PDFLib.PDFDocument.load(bytes);
+   const pages=await merged.copyPages(section,section.getPageIndices());
+   pages.forEach(page=>merged.addPage(page));
+  }
+  merged.setTitle('Corte Molassi - Tutti i piani - stati aggiornati');
+  return merged.save();
+ }
+ async function download(){
   const statuses=Object.fromEntries(MolassiRepository.units.map(u=>[u.id,MolassiState.get(u.id)||'unknown']));
   const records=Object.fromEntries(MolassiRepository.units.map(u=>[u.id,MolassiState.record(u.id)]));
-  const bytes=await create(floor,statuses,records);
+  const bytes=await createAll(statuses,records);
   if(lastUrl)URL.revokeObjectURL(lastUrl);
   lastUrl=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
   let link=document.getElementById('pdf-download-ready');
   if(!link){link=document.createElement('a');link.id='pdf-download-ready';link.className='download-ready';document.getElementById('notice').after(link)}
-  link.href=lastUrl;link.download='Corte-Molassi-'+floor+'-aggiornato.pdf';link.textContent='PDF pronto: fai clic qui per scaricarlo';link.hidden=false;link.click();
+  link.href=lastUrl;link.download='Corte-Molassi-tutti-i-piani-aggiornato.pdf';link.textContent='PDF completo pronto: fai clic qui per scaricarlo';link.hidden=false;link.click();
  }
- return {create,download};
+ return {create,createAll,download};
 })();
