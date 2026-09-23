@@ -2,6 +2,7 @@
 (() => {
  'use strict';
  if(location.protocol==='file:'){location.replace('login.html');return}
+ if(!MolassiAccess.check())return;
  const repo=window.MolassiRepository,state=window.MolassiState,$=id=>document.getElementById(id);
  const labels={available:'Disponibile',reserved:'Riservato',sold:'Venduto',unknown:'Da verificare'};
  let floor='p1',selected=null,zoom=1;
@@ -55,21 +56,33 @@
  $('floor').addEventListener('change',()=>{floor=$('floor').value;renderFloor()});$('edit').addEventListener('change',()=>detail(selected));$('unit-search').addEventListener('input',renderStates);
  $('available').addEventListener('change',()=>{if(selected&&$('available').checked&&status(repo.get(selected))!=='available')selected=null;renderStates();detail(selected)});
  $('zoom-in').addEventListener('click',()=>setZoom(zoom+.5));$('zoom-out').addEventListener('click',()=>setZoom(zoom-.5));$('fit').addEventListener('click',()=>{setZoom(1);$('viewport').scrollTo(0,0)});
- $('save').addEventListener('click',()=>{
+ $('save').addEventListener('click',async()=>{
   if(!$('edit').checked||!selected)return;const id=selected,value=$('status').value;
-  if(state.set(id,value==='unknown'?null:value)){message('Stato di '+id+' salvato: '+labels[value]+'. Aggiornato in tutte le tavole dell’unità.');if($('available').checked&&value!=='available')selected=null;renderStates();detail(selected)}else message(state.warning);
+  $('save').disabled=true; const saved=await state.set(id,value==='unknown'?null:value); $('save').disabled=false; if(saved){message('Stato di '+id+' salvato: '+labels[value]+'. Aggiornato in tutte le tavole dell’unità.');if($('available').checked&&value!=='available')selected=null;renderStates();detail(selected)}else message(state.warning);
  });
  $('export-pdf').addEventListener('click',async()=>{
   const button=$('export-pdf'),f=floorInfo();button.disabled=true;button.textContent='Preparazione PDF…';message('Esportazione di '+f.label+' con tutti gli stati correnti, indipendentemente da filtri e zoom.');
-  try{await MolassiExport.download(f.id);message('PDF di '+f.label+' pronto. Il file contiene la tavola originale e gli stati correnti di tutte le unità del piano.')}
+  try{await state.refresh();await MolassiExport.download(f.id);message('PDF di '+f.label+' pronto. Il file contiene la tavola originale e gli stati correnti di tutte le unità del piano.')}
   catch(error){message(error.message)}finally{button.disabled=false;button.textContent='Scarica PDF del piano'}
  });
  $('logout').addEventListener('click',async()=>{
+  if(MolassiAccess.isStatic){MolassiAccess.logout();return}
   try{const r=await fetch('/api/logout',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});if(r.ok||r.status===401)location.replace('/login.html');else throw Error()}
   catch{message('Uscita non riuscita. Verifica che il server sia attivo e riprova.')}
  });
- async function checkSession(){try{const r=await fetch('/api/session');if(r.status===401)location.replace('/login.html')}catch{message('Collegamento al server interrotto. Gli stati rimangono salvati in questo browser.')}}
+ async function checkSession(){if(MolassiAccess.isStatic){MolassiAccess.check();return}try{const r=await fetch('/api/session');if(r.status===401)location.replace('/login.html')}catch{message('Collegamento al server interrotto. Gli stati rimangono salvati in questo browser.')}}
  window.addEventListener('pageshow',checkSession);document.addEventListener('visibilitychange',()=>{if(!document.hidden)checkSession()});
  $('plan-image').addEventListener('error',()=>message('Impossibile caricare la tavola. Verifica la connessione o accedi nuovamente.'));
- renderFloor();if(state.warning)message(state.warning);
+ state.subscribe(()=>{
+  const draft=$('status').value;
+  renderStates();
+  if(selected){detail(selected);if($('edit').checked)$('status').value=draft}
+  message(state.warning||'Stati condivisi aggiornati. Controllo automatico ogni 5 secondi.');
+ });
+ renderFloor();
+ state.start().catch(error=>{
+  document.documentElement.classList.remove('app-pending');
+  document.querySelector('main').hidden=true;
+  const alert=document.createElement('p');alert.setAttribute('role','alert');alert.textContent=error.message+' Rientra dalla schermata di accesso.';document.body.append(alert);
+ });
 })();
