@@ -14,7 +14,10 @@ function doPost(e) {
   const props=PropertiesService.getScriptProperties();
   if(!props.getProperty('PASSWORD')||body.password!==props.getProperty('PASSWORD'))throw Error('Password non corretta.');
   if(!['read','write'].includes(body.action))throw Error('Operazione non valida.');
+  const cache=CacheService.getScriptCache(),cacheKey='molassi-state-v2';
+  if(body.action==='read'){const hit=cache.get(cacheKey);if(hit)return ContentService.createTextOutput(hit).setMimeType(ContentService.MimeType.JSON)}
   lock=LockService.getScriptLock();lock.waitLock(10000);
+  if(body.action==='read'){const hit=cache.get(cacheKey);if(hit)return ContentService.createTextOutput(hit).setMimeType(ContentService.MimeType.JSON)}
   const sheet=SpreadsheetApp.openById(props.getProperty('SHEET_ID')).getSheetByName('Stati');
   const rows=sheet.getDataRange().getValues().slice(1),units={};
   rows.forEach(row=>{if(row[0])units[row[0]]={status:row[1]||null,version:Number(row[2]),seller:readText_(row[4]),client:readText_(row[5])}});
@@ -26,11 +29,13 @@ function doPost(e) {
    if(typeof seller!=='string'||typeof client!=='string'||seller.length>20||client.length>120||/[\x00-\x1f]/.test(seller+client))throw Error('Venditore o cliente non valido.');
    if((old?old.version:0)!==body.version)throw Error('Questa unità è stata modificata da un altro utente. Attendi l’aggiornamento e riprova.');
    const row=rows.findIndex(r=>r[0]===body.id),version=body.version+1;
-   sheet.getRange(1,5,1,2).setValues([['Venditore','Cliente']]);
+   if(!props.getProperty('SCHEMA_V2_READY')){sheet.getRange(1,5,1,2).setValues([['Venditore','Cliente']]);props.setProperty('SCHEMA_V2_READY','yes')}
    sheet.getRange(row<0?sheet.getLastRow()+1:row+2,1,1,6).setValues([[body.id,body.status||'',version,new Date().toISOString(),writeText_(seller.trim()),writeText_(client.trim())]]);
    SpreadsheetApp.flush();units[body.id]={status:body.status,version,seller:seller.trim(),client:client.trim()};
   }
-  return json_({ok:true,schemaVersion:2,units});
+  const result={ok:true,schemaVersion:2,units};
+  try{cache.put(cacheKey,JSON.stringify(result),5)}catch{cache.remove(cacheKey)}
+  return json_(result);
  } catch(error){return json_({ok:false,error:error.message})}
  finally{if(lock&&lock.hasLock())lock.releaseLock()}
 }
