@@ -1,10 +1,10 @@
 # Corte Molassi — versione GitHub Pages
 
-Prima dell’uso seguire **ATTIVAZIONE.md** per collegare Google Sheets. Password iniziale: **0000**, verificata dal servizio condiviso. Nessun salvataggio degli stati nel solo browser.
+Per aggiornare il servizio esistente con venditore e cliente, seguire **AGGIORNAMENTO.md**. Prima dell’uso seguire **ATTIVAZIONE.md** per collegare Google Sheets. Password iniziale: **0000**, verificata dal servizio condiviso. Nessun salvataggio degli stati nel solo browser.
 
 La versione conserva tutte le 10 tavole e le geometrie del progetto precedente: 209 unità con 222 geometrie sulle 9 tavole dei piani; la decima tavola contiene sezioni consultabili ed esportabili. Le unità su più livelli condividono lo stesso stato.
 
-Selezionare un piano, attivare Modalità modifica, scegliere un’unità e salvare lo stato. Gli altri utenti ricevono gli aggiornamenti con un controllo ogni 5 secondi. Venduto usa rosso pieno. Scarica PDF del piano esporta la tavola originale con tutte le campiture correnti.
+Selezionare un piano, attivare Modalità modifica, scegliere un’unità e salvare lo stato. Gli altri utenti ricevono gli aggiornamenti con un controllo ogni 5 secondi. Venduto rosso, prenotato giallo e disponibile blu hanno opacità 45%. Scarica PDF del piano esporta la tavola in scala di grigi con le campiture e un riepilogo di stato, venditore e cliente per ogni unità.
 
 Per una prova locale usare un server statico, per esempio `python -m http.server 8080`, e aprire `http://localhost:8080/login.html`. Anche la prova locale richiede il collegamento Google configurato. Il sito usa soltanto file statici e il servizio Google Apps Script.
 

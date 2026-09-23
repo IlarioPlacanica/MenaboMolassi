@@ -1,6 +1,6 @@
 # Corte Molassi — GitHub Pages e stati condivisi
 
-Questa versione continua il progetto esistente: 10 tavole originali, geometrie SVG esistenti, venduto rosso pieno ed esportazione PDF nel browser. Il PDF scaricato contiene la pagina originale e le campiture correnti, anche delle unità nascoste dai filtri.
+Questa versione continua il progetto esistente: 10 tavole originali, geometrie SVG esistenti, campiture al 45% ed esportazione PDF nel browser. Il PDF scaricato contiene la pagina originale e le campiture correnti, anche delle unità nascoste dai filtri.
 
 ## Attivazione Google Sheets (una sola volta)
 
@@ -24,6 +24,6 @@ Non modificare manualmente colonne o versioni della scheda Stati. Le quote Googl
 
 ## Verifiche e stato della consegna
 
-Test automatici con servizio Google simulato: password errata, due utenti, conflitti, errori di rete, validazione e rilascio del blocco. Esportazione delle 10 tavole verificata con la libreria PDF inclusa. La connessione a un vero foglio Google e la pubblicazione non sono verificate finché manca l’URL della distribuzione.
+Test automatici con servizio Google simulato: password errata, due utenti, conflitti, errori di rete, validazione e rilascio del blocco. Esportazione delle 10 tavole verificata con la libreria PDF inclusa. Il collegamento Google è già configurato. Per attivare i nuovi campi aggiornare la distribuzione come indicato in AGGIORNAMENTO.md.
 
 Documentazione Google: https://developers.google.com/apps-script/guides/web e https://developers.google.com/apps-script/guides/content

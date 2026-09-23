@@ -7,3 +7,12 @@
 @media(max-width:520px){.login-card{padding:28px}.toolbar #export-pdf{width:100%}#logout{padding:8px 12px}}
 
 .app-pending body{visibility:hidden}.download-ready{display:inline-block;padding:12px 16px;border:1px solid var(--accent);border-radius:6px;margin-bottom:16px;font-weight:bold}
+
+/* Stati commerciali: opacità della sola campitura, anche in selezione. */
+.unit.available,.unit.available:hover,.unit.available:focus,.unit.available.selected{fill:#1565c0;fill-opacity:.45;stroke:#1565c0}
+.unit.reserved,.unit.reserved:hover,.unit.reserved:focus,.unit.reserved.selected{fill:#ffcc00;fill-opacity:.45;stroke:#a68100}
+.unit.sold,.unit.sold:hover,.unit.sold:focus,.unit.sold.selected{fill:#d32f2f;fill-opacity:.45;stroke:#d32f2f}
+.legend i.available{background:rgba(21,101,192,.45)}.legend i.reserved{background:rgba(255,204,0,.45)}.legend i.sold{background:rgba(211,47,47,.45)}
+.badge.available{color:#1565c0;background:#edf4ff}
+#seller,#client{width:100%;padding:10px;border:1px solid var(--line);border-radius:6px}#client-value{overflow-wrap:anywhere}
+@media(min-width:901px){.workspace{grid-template-columns:300px minmax(0,1fr)}.workspace aside{grid-column:1;grid-row:1}.workspace .plan-card{grid-column:2;grid-row:1}}
