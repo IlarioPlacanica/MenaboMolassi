@@ -4,12 +4,12 @@
  if(location.protocol==='file:'){location.replace('login.html');return}
  if(!MolassiAccess.check())return;
  const repo=window.MolassiRepository,state=window.MolassiState,$=id=>document.getElementById(id);
- const labels={available:'Disponibile',reserved:'Prenotato',sold:'Venduto',unknown:'Da verificare'};
- let floor='p1',selected=null,zoom=1,dirty=false,editVersion=0;
- const current=()=>repo.forFloor(floor),status=u=>state.get(u.id)||'unknown',floorInfo=()=>repo.floors.find(f=>f.id===floor);
+ const labels={available:'Disponibile',reserved:'Prenotato',sold:'Venduto'};
+ let floor='p1',selected=null,zoom=1,dirty=false,editVersion=0,exporting=false;
+ const current=()=>repo.forFloor(floor),status=u=>state.get(u.id)||'available',floorInfo=()=>repo.floors.find(f=>f.id===floor);
  const areaText=u=>u.commercialArea===null?'Superficie non indicata':u.commercialArea+' m²';
  const message=text=>{$('notice').textContent=text};
- repo.floors.forEach(f=>{const o=document.createElement('option');o.value=f.id;o.textContent=f.label;$('floor').append(o)});$('floor').value=floor;
+ repo.floors.filter(f=>f.mapped).forEach(f=>{const o=document.createElement('option');o.value=f.id;o.textContent=f.label;$('floor').append(o)});$('floor').value=floor;
  $('plan').setAttribute('viewBox',repo.viewBox.join(' '));
  function detail(id){
   const u=current().find(u=>u.id===id);$('details').hidden=!u;
@@ -18,28 +18,27 @@
   const type=u.role==='soffitta'?'Soffitta':u.role==='soppalco'?'Soppalco':u.type[0].toUpperCase()+u.type.slice(1);
   $('unit-subtitle').textContent=type+' · '+floorInfo().label;
   const s=status(u);$('status-badge').textContent=labels[s];$('status-badge').className='badge '+s;
-  $('area').textContent=areaText(u);$('rooms').textContent=u.rooms??'Da verificare';$('price').textContent=u.price===null?'Da verificare':u.price+' €';
-  $('unit-note').textContent=u.notes||'Dati letti dalla tavola; locali e prezzo non assegnati per deduzione.';
-  $('source-note').textContent='Fonte: pagina '+u.sourcePage+' · '+floorInfo().emissionDate+(repo.get(id).status==='sold'?' · Venduto nel PDF.':' · Stato iniziale non dichiarato.');
+  $('area').textContent=areaText(u);
+  $('unit-note').textContent=u.notes||'';
+  $('source-note').textContent='Fonte: pagina '+u.sourcePage+' · '+floorInfo().emissionDate+(repo.get(id).status==='sold'?' · Venduto nel PDF.':' · Disponibile salvo aggiornamenti condivisi.');
   $('status').value=s;
-  const record=state.record(id);$('seller').value=record.seller;$('client').value=record.client;
-  $('seller-value').textContent=record.seller||'Non indicata';$('client-value').textContent=record.client||'Non indicato';
+  const record=state.record(id);
   editVersion=record.version;
   const editable=$('edit').checked&&selected===id;$('edit-controls').hidden=!editable;$('edit-hint').hidden=editable;
   $('edit-hint').textContent=$('edit').checked?'Seleziona l’unità con un clic per modificarla.':'Attiva la modalità modifica per aggiornare lo stato.';
  }
  function choose(id){dirty=false;selected=id;renderStates();detail(id)}
  function renderStates(){
-  const list=current(),only=$('available').checked,query=$('unit-search').value.trim().toUpperCase();
-  const counts={available:0,reserved:0,sold:0,unknown:0};list.forEach(u=>counts[status(u)]++);
+  const list=current(),query=$('unit-search').value.trim().toUpperCase();
+  const counts={available:0,reserved:0,sold:0};list.forEach(u=>counts[status(u)]++);
   $('counters').replaceChildren();
   for(const [key,n] of [['total',list.length],...Object.entries(counts)]){const el=document.createElement('div');el.className='counter';const num=document.createElement('strong');num.textContent=n;el.append(num,document.createTextNode(key==='total'?'Unità del piano':labels[key]));$('counters').append(el)}
   document.querySelectorAll('.unit').forEach(p=>{
-   const u=repo.get(p.dataset.id),s=status(u);p.setAttribute('class','unit '+s+(selected===u.id?' selected':'')+(only&&s!=='available'?' filtered':''));
+   const u=repo.get(p.dataset.id),s=status(u);p.setAttribute('class','unit '+s+(selected===u.id?' selected':''));
    p.setAttribute('aria-label',u.id+' · '+labels[s]+' · '+areaText(u));p.setAttribute('aria-pressed',String(selected===u.id));
   });
   $('unit-list').replaceChildren();
-  const shown=list.filter(u=>(!only||status(u)==='available')&&u.id.includes(query)).sort((a,b)=>a.id.localeCompare(b.id,'it',{numeric:true}));
+  const shown=list.filter(u=>u.id.includes(query)).sort((a,b)=>a.id.localeCompare(b.id,'it',{numeric:true}));
   $('list-count').textContent=floorInfo().mapped?shown.length+' / '+list.length:'Sezioni';
   shown.forEach(u=>{const b=document.createElement('button');b.className='unit-button';b.dataset.id=u.id;b.setAttribute('aria-pressed',String(u.id===selected));b.append(document.createTextNode(u.id));const sub=document.createElement('span');sub.textContent=labels[status(u)]+' · '+areaText(u);b.append(sub);b.addEventListener('click',()=>choose(u.id));$('unit-list').append(b)});
   if(!shown.length){const p=document.createElement('p');p.className='note';p.textContent=list.length?'Nessuna unità corrisponde ai filtri.':'Questa tavola mostra le sezioni dei fabbricati.';$('unit-list').append(p)}
@@ -48,7 +47,7 @@
  function renderFloor(){
   const f=floorInfo();dirty=false;selected=null;$('counters').hidden=!f.mapped;$('plan-title').textContent=f.label;
   $('plan-hint').textContent=f.mapped?'Seleziona un’unità per i dettagli':'Sezioni originali dei fabbricati';
-  $('plan-image').setAttribute('href',f.image);$('units').replaceChildren();$('available').checked=false;$('available').disabled=!f.mapped;$('edit').disabled=!f.mapped;$('unit-search').value='';$('unit-search').disabled=!f.mapped;
+  $('plan-image').setAttribute('href',f.image);$('units').replaceChildren();$('edit').disabled=!f.mapped;$('unit-search').value='';$('unit-search').disabled=!f.mapped;
   current().forEach(u=>{
    const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',u.path);p.setAttribute('class','unit');p.dataset.id=u.id;p.setAttribute('role','button');p.setAttribute('tabindex','0');
    p.addEventListener('click',()=>choose(u.id));p.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose(u.id)}});
@@ -57,16 +56,25 @@
   setZoom(1);$('viewport').scrollTo(0,0);renderStates();detail(null);
  }
  $('floor').addEventListener('change',()=>{floor=$('floor').value;renderFloor()});$('edit').addEventListener('change',()=>{dirty=false;detail(selected)});$('unit-search').addEventListener('input',renderStates);
- $('available').addEventListener('change',()=>{if(selected&&$('available').checked&&status(repo.get(selected))!=='available')selected=null;renderStates();detail(selected)});
  $('zoom-in').addEventListener('click',()=>setZoom(zoom+.5));$('zoom-out').addEventListener('click',()=>setZoom(zoom-.5));$('fit').addEventListener('click',()=>{setZoom(1);$('viewport').scrollTo(0,0)});
  $('save').addEventListener('click',async()=>{
   if(!$('edit').checked||!selected)return;const id=selected,value=$('status').value;
-  $('save').disabled=true; const saved=await state.set(id,value==='unknown'?null:value,{seller:$('seller').value.trim(),client:$('client').value.trim()},editVersion); $('save').disabled=false; if(saved){dirty=false;message('Scheda di '+id+' salvata: '+labels[value]+'. Aggiornato in tutte le tavole dell’unità.');if($('available').checked&&value!=='available')selected=null;renderStates();detail(selected)}else {const reason=state.warning;message(reason);await state.refresh().catch(()=>{});if(selected===id){dirty=false;detail(id);message(reason+' Scheda ricaricata: verifica i dati prima di riprovare.')}}
+  $('save').disabled=true; const saved=await state.set(id,value,{},editVersion); $('save').disabled=false; if(saved){dirty=false;message('Scheda di '+id+' salvata: '+labels[value]+'. Aggiornato in tutte le tavole dell’unità.');renderStates();detail(selected)}else {const reason=state.warning;message(reason);await state.refresh().catch(()=>{});if(selected===id){dirty=false;detail(id);message(reason+' Scheda ricaricata: verifica i dati prima di riprovare.')}}
  });
  $('export-pdf').addEventListener('click',async()=>{
-  const button=$('export-pdf');button.disabled=true;button.textContent='Preparazione PDF completo…';message('Esportazione di tutti i piani e delle sezioni con i dati correnti, indipendentemente dal piano visualizzato e dai filtri.');
-  try{if(dirty)throw Error('Salva la scheda prima di scaricare il PDF.');await state.refresh();await MolassiExport.download();message('PDF completo pronto: tutti i piani, le sezioni e i riepiloghi di stato, venditore e cliente.')}
-  catch(error){message(error.message)}finally{button.disabled=false;button.textContent='Scarica PDF di tutti i piani'}
+  if(exporting)return;
+  const button=$('export-pdf');
+  try{
+   if(state.saving)throw Error('Salvataggio in corso: attendi la conferma prima di scaricare il PDF.');
+   if(dirty)throw Error('Salva la scheda prima di scaricare il PDF.');
+   if(!state.ready)throw Error('Attendi il primo caricamento degli stati prima di scaricare il PDF.');
+   exporting=true;button.disabled=true;button.textContent='Preparazione PDF completo…';
+   const warning=state.warning;
+   message('Creo il PDF con gli ultimi stati sincronizzati mostrati nel sito.');
+   await MolassiExport.download(progress=>{button.textContent=progress});
+   message('PDF completo pronto con gli ultimi stati sincronizzati. Se il download non parte, premi il collegamento accanto al pulsante.'+(warning?' Attenzione: '+warning:''));
+  }
+  catch(error){message(error.name==='TimeoutError'?'Il caricamento del PDF originale ha impiegato troppo tempo. Verifica la connessione e riprova.':error.message)}finally{exporting=false;button.disabled=false;button.textContent='Scarica PDF di tutti i piani'}
  });
  $('logout').addEventListener('click',async()=>{
   if(MolassiAccess.isStatic){MolassiAccess.logout();return}
@@ -76,12 +84,12 @@
  async function checkSession(){if(MolassiAccess.isStatic){MolassiAccess.check();return}try{const r=await fetch('/api/session');if(r.status===401)location.replace('/login.html')}catch{message('Collegamento al server interrotto. Gli stati rimangono salvati in questo browser.')}}
  window.addEventListener('pageshow',checkSession);document.addEventListener('visibilitychange',()=>{if(!document.hidden)checkSession()});
  $('plan-image').addEventListener('error',()=>message('Impossibile caricare la tavola. Verifica la connessione o accedi nuovamente.'));
- ['status','seller','client'].forEach(id=>$(id).addEventListener('input',()=>{dirty=true}));
+ ['status'].forEach(id=>$(id).addEventListener('input',()=>{dirty=true}));
  state.subscribe(()=>{
-  const draft={status:$('status').value,seller:$('seller').value,client:$('client').value,version:editVersion};
+  const draft={status:$('status').value,version:editVersion};
   renderStates();
-  if(selected){detail(selected);if($('edit').checked&&dirty){$('status').value=draft.status;$('seller').value=draft.seller;$('client').value=draft.client;editVersion=draft.version}}
-  message(state.warning||'Stati condivisi aggiornati. Controllo automatico ogni 5 secondi.');
+  if(selected){detail(selected);if($('edit').checked&&dirty){$('status').value=draft.status;editVersion=draft.version}}
+  if(!exporting&&(state.warning||!$('pdf-download-ready')))message(state.warning||'Stati condivisi aggiornati. Controllo automatico ogni 5 secondi.');
  });
  renderFloor();
  state.start().catch(error=>{

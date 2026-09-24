@@ -29,5 +29,5 @@ window.MolassiState=(()=>{
  }
  async function start(){const snapshot=MolassiShared.takeSnapshot();if(snapshot)accept(snapshot);else await refresh();document.documentElement.classList.remove('app-pending');poll()}
  function poll(){setTimeout(async()=>{if(!document.hidden&&!writeTask)try{await refresh()}catch{}poll()},Math.max(3000,MOLASSI_CONFIG.pollMs||5000))}
- return {get warning(){return warning},get ready(){return ready},get(id){return Object.hasOwn(units,id)?units[id].status:MolassiRepository.get(id).status},record(id){return {status:this.get(id),seller:units[id]?.seller||'',client:units[id]?.client||'',version:units[id]?.version||0}},set,refresh,start,subscribe(fn){listeners.add(fn)}};
+ return {get warning(){return warning},get ready(){return ready},get saving(){return !!writeTask},get(id){return (Object.hasOwn(units,id)?units[id].status:MolassiRepository.get(id).status)??'available'},record(id){return {status:this.get(id),seller:units[id]?.seller||'',client:units[id]?.client||'',version:units[id]?.version||0}},set,refresh,start,subscribe(fn){listeners.add(fn)}};
 })();
